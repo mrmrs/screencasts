@@ -16,5 +16,10 @@ layout: post
 <div class="center mw8 mtl mtx-ns">
 
   <iframe class="wi-100 pbx" src="//player.vimeo.com/video/106787027" style="height: 24rem;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <code>ls >> npm-publish.txt</code>
+  <code>xargs -n 1 npm publish < npm-publish.txt</code>
+
+  <p>Pipe output form ls to contents of a new file called npm-publish.txt</p>
+  <p>Then use xargs to run an operation on every line in a file. In this case we will run npm-publish on every line in the file. </p>
 
 </div>
