@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<main class="bg-aqua ptl pbx mbn">
+  <h1 class="f3 f1-ns ttu tc">Screencasts</h1>
+  <h2 class="tc f5 fw4">Vim, Unix, and OOCSS as design tools</h2>
+</main>
+
+{% if site.posts %}
+  <ul class="pln list mtn ptn">
+    {% for post in site.posts %}
+      <li class="pln wi-100 db pvm pvl-ns phs phl-ns bb b--near-white">
+        <a href="{{ post.url }}" title="{{post.title}}" class="link f4 f2-ns b lh-copy">
+          {{ post.title }} ▸
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

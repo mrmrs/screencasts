@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include _head.html %}
+  <body>
+    {{ content }}
+    <footer class="bt b--near-white ptl pbx center mw8">
+      <div class="phs phn-ns">
+        <h1 class="sans-serif ttu tracked f5">Other Screencasts</h1>
+        <ul class="list pln mln">
+          {% for post in site.related_posts limit: 5 %}
+          <li class="pln pvm">
+            <a href="{{ post.url }}" class="db pvs f4 f2-ns sans-serif link " title="{{post.title}}">
+              {{ post.title }}
+              <span>›</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <p class="">Recorded with ♥ by <a href="http://mrmrs.cc/" class="b teal link" title="Portfolio of Adam Morse">mrmrs</a></p>
+    </footer>
+  </body>
+</html>

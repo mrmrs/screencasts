@@ -1,0 +1,44 @@
+{
+  "name": "nkd",
+  "description": "Barebones scaffolding for developing a jekyll site.",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrmrs/nkd.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mrmrs/nkd/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "homepage": "http://nkd.cc",
+  "keywords": [
+    "jekyll",
+    "ruby",
+    "static site generator",
+    "html5",
+    "css",
+    "sass",
+    "template"
+  ],
+  "devDependencies": {
+    "browser-sync": "^1.1.1",
+    "gulp": "~3.5.5",
+    "gulp-autoprefixer": "0.0.5",
+    "gulp-csslint": "~0.1.3",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-minify-css": "~0.3.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "~0.7.2",
+    "gulp-shell": "^0.2.9",
+    "gulp-size": "^0.4.0",
+    "gulp-svgmin": "~0.4.1",
+    "gulp-util": "~2.2.12",
+    "gulp-watch": "^0.6.8",
+    "imagemin-pngcrush": "^1.0.0",
+    "jshint-stylish": "~0.1.5"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  }
+}
