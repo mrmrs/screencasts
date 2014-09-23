@@ -17,25 +17,28 @@
           </div>
         </header>
         {{ content }}
+        <footer class="bt b--near-white ptl pbx center mw8">
+          <div class="phs phn-ns">
+            <h1 class="sans-serif ttu tracked f5">Other Screencasts</h1>
+            <ul class="list pln mln">
+              {% for post in site.related_posts limit: 5 %}
+              <li class="pln pvm">
+                <a href="{{ post.url }}" class="db pvs f4 f2-ns sans-serif link " title="{{post.title}}">
+                  {{ post.title }}
+                  <span>›</span>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </footer>
       </article>
     </main>
 
-    <footer class="bt b--near-white ptl pbx center mw8">
-      <div class="phs phn-ns">
-        <h1 class="sans-serif ttu tracked f5">Other Screencasts</h1>
-        <ul class="list pln mln">
-          {% for post in site.related_posts limit: 5 %}
-          <li class="pln pvm">
-            <a href="{{ post.url }}" class="db pvs f4 f2-ns sans-serif link " title="{{post.title}}">
-              {{ post.title }}
-              <span>›</span>
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
+    <footer class="bt b--near-white ptl pbx">
+      <div class="phs phl-ns">
+        {% include _footer_meta.html %}
       </div>
-      <p class="">Recorded with ♥ by <a href="http://mrmrs.cc/" class="b teal link" title="Portfolio of Adam Morse">mrmrs</a></p>
-      <p>Built with <a href="http://nkd.cc">nkd</a> and <a href="http://github.com/mrmrs/tachyons">tachyons</a></p>
     </footer>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
