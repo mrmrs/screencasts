@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="ptl ptxl-ns pbx pbxxl-ns mbn bg-cover white phs phm-ns" style="background:#222 ;">
+<header class="ptl ptx-ns pbx pbxl-ns mbn bg-cover white phs phm-ns" style="background:#222 ;">
   <h1 class="f3 f1-ns ttu tc">Design by Typing</h1>
   <h2 class="tc f5 f2-ns fw4">Screencasts on using Vim, Git, Unix, HTML and OOCSS as design tools</h2>
   <div class="tc center mtl">
@@ -12,9 +12,15 @@ layout: default
 </header>
 <main>
 {% if site.posts %}
-  <ul class="pln list mtn ptn">
+<div class="center mw7 pbm ptl">
+  <div class="phs phn-ns">
+  <h3 class="small ttu fw4">The Screencasts</h1>
+  <p class="f4 serif lh-copy">If you have a suggestion for a screencast you'd like to see - <a href="http://github.com/mrmrs/screencasts/issues/" class="link black b">please open an issue here.</a>
+  </div>
+</div>
+  <ul class="pln list mtm ptn center mw7">
     {% for post in site.posts %}
-      <li class="pln wi-100 db pvm pvl-ns phs phl-ns bb b--near-white">
+      <li class="pln wi-100 db pvm pvl-ns phs phn-ns bt b--near-white">
         <a href="{{ post.url }}" title="{{post.title}}" class="link f4 f2-ns b lh-copy">
           {{ post.title }} ▸
         </a>
@@ -22,10 +28,11 @@ layout: default
     {% endfor %}
   </ul>
 </main>
-<footer>
-  <div class="center mw8 phs phn-ns">
-      <p class="">Recorded with ♥ by <a href="http://mrmrs.cc/" class="b teal link" title="Portfolio of Adam Morse">mrmrs</a></p>
-      <p>Built with <a href="http://nkd.cc" class="link">nkd</a> and <a href="http://github.com/mrmrs/tachyons" class="link">tachyons</a></p>
+<footer class="pvl bt b--near-white">
+  <div class="center mw7">
+    <div class="phs phn-ns">
+      {% include _footer_meta.html %}
     </div>
+  </div>
 </footer>
 {% endif %}
