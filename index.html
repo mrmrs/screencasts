@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<main class="bg-aqua ptl pbx mbn">
-  <h1 class="f3 f1-ns ttu tc">Screencasts</h1>
-  <h2 class="tc f5 fw4">Vim, Unix, and OOCSS as design tools</h2>
-  <div class="tc center m25">
+<header class="ptl ptxl-ns pbx pbxxl-ns mbn bg-cover white phs phm-ns" style="background:#222 ;">
+  <h1 class="f3 f1-ns ttu tc">Design by Typing</h1>
+  <h2 class="tc f5 f2-ns fw4">Screencasts on using Vim, Git, Unix, HTML and OOCSS as design tools</h2>
+  <div class="tc center mtl">
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="mrmrs_" data-size="large">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
-</main>
-
+</header>
+<main>
 {% if site.posts %}
   <ul class="pln list mtn ptn">
     {% for post in site.posts %}
@@ -21,4 +21,11 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+</main>
+<footer>
+  <div class="center mw8 phs phn-ns">
+      <p class="">Recorded with ♥ by <a href="http://mrmrs.cc/" class="b teal link" title="Portfolio of Adam Morse">mrmrs</a></p>
+      <p>Built with <a href="http://nkd.cc" class="link">nkd</a> and <a href="http://github.com/mrmrs/tachyons" class="link">tachyons</a></p>
+    </div>
+</footer>
 {% endif %}
