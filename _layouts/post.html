@@ -3,7 +3,7 @@
   {% include _head.html %}
   <body>
     <header class="bb pvm phs phn-ns">
-      <a href="/" title="home" class="link black"><h1 class="ttu tc f5 mtn">Design by typing 
+      <a href="/" title="home" class="link black"><h1 class="ttu tc f5 mtn">Design by typing
         </h1>
       </a>
       <small class="dn db-ns fw1 small tc"> // Screencasts on using Vim, Git, Unix, HTML and OOCSS as design tools. \\</small>
@@ -19,6 +19,9 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
           </div>
         </header>
+        <div class="center mw8">
+          <iframe class="wi-100" style="height:24em;" src="//player.vimeo.com/video/{{ page.vimeoId }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
         {{ content }}
         <footer class="bt b--near-white ptl pbx center mw7">
           <div class="phs phn-ns">
