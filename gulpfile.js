@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     csslint = require('gulp-csslint'),
     browserReload = browserSync.reload;
 
-// Initialize browser-sync which starts a static server also allows for 
+// Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
@@ -32,7 +32,7 @@ gulp.task('bs-reload', function () {
 
 
 gulp.task('minify-css', function(){
-gulp.src('./css/nkd.css') // set this to the file(s) you want to minify. 
+gulp.src('./css/nkd.css') // set this to the file(s) you want to minify.
     .pipe(minifyCSS())
     .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
     .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
@@ -104,7 +104,5 @@ gulp.task('production', function(){
 */
 gulp.task('default', ['pre-process', 'minify-css', 'bs-reload', 'browser-sync'], function(){
   gulp.start('pre-process', 'csslint');
-  gulp.watch('sass/*.scss', ['pre-process', 'minify-css']);
-  gulp.watch('css/nkd.css', ['bs-reload', 'minify-css']);
-  gulp.watch('*.html', ['bs-reload'])
+  gulp.watch('./_site/*', ['bs-reload'])
 });
