@@ -3,10 +3,10 @@ layout: default
 ---
 
   <style type="text/css" media="screen">
-    .carbonads { font-size: 13px; }
+    .carbonads { font-size: 12px; }
     .carbonads .carbon-wrap { display: block; overflow: hidden; }
     .carbonads .carbon-wrap .carbon-img { float: left; margin-right: 1rem; }
-    .carbonads .carbon-wrap .carbon-text { float:none; overflow:hidden; display: block; font-size: 15px; }
+    .carbonads .carbon-wrap .carbon-text { float:none; overflow:hidden; display: block; font-size: 12px; }
     .carbonads a,
     .carbonads a:link,
     .carbonads a:hover,
@@ -24,28 +24,28 @@ layout: default
     .carbon-poweredby:link,
     .carbon-poweredby:visited { font-style: italic; color: #aaa; }
   </style>
-<header class="ptl ptx-ns pbx pbxl-ns mbn bg-cover white phs phm-ns" style="background:#222 ;">
+<header class="pt4 pt5-ns pb5 pb6-ns mb0 bg-cover white ph2 ph3-ns" style="background:#222 ;">
   <h1 class="f3 f1-ns ttu tc">Design by Typing</h1>
-  <h2 class="tc f5 f4-ns book">Screencasts on using Vim, Git, Unix, HTML and OOCSS as design tools</h2>
-  <div class="tc center mtl">
+  <h2 class="tc f5 f4-ns fw4">Screencasts on using Vim, Git, Unix, HTML and OOCSS as design tools</h2>
+  <div class="tc center mt4">
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="mrmrs_" data-size="large">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
-  <div class="carbonads mtl center mw6 pam ba b--dark-gray br2">
+  <div class="carbonads mt4 center mw6 pa3 ba b--dark-gray br2">
     <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=designbytypingcom" id="_carbonads_js"></script>
   </div>
 </header>
 <main>
 {% if site.posts %}
-<div class="center mw7 pbm ptl">
-  <div class="phs phn-ns">
+<div class="center mw7 pbm pt4">
+  <div class="ph2 ph0-ns">
   <h3 class="small ttu fw4">The Screencasts</h1>
   <p class="f4 serif lh-copy">If you have a suggestion for a screencast you'd like to see - <a href="http://github.com/mrmrs/screencasts/issues/" class="link black b">please open an issue here.</a>
   </div>
 </div>
-  <ul class="pln list mtm ptn center mw7">
+  <ul class="pl0 list mt3 ptn center mw7">
     {% for post in site.posts %}
-      <li class="pln wi-100 db pvm pvl-ns phs phn-ns bt b--near-white">
+      <li class="pl0 w-100 db pv3 pv4-ns ph2 ph0-ns bt b--near-white">
         <a href="{{ post.url }}" title="{{post.title}}" class="link f4 f2-ns b lh-copy">
           {{ post.title }} ▸
         </a>
@@ -53,9 +53,9 @@ layout: default
     {% endfor %}
   </ul>
 </main>
-<footer class="pvl bt b--near-white">
+<footer class="pv4 bt b--near-white">
   <div class="center mw7">
-    <div class="phs phn-ns">
+    <div class="ph2 ph0-ns">
       {% include _footer_meta.html %}
     </div>
   </div>
