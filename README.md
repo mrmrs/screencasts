@@ -1,19 +1,17 @@
-Checkout [nkd.cc](http://nkd.cc "NKD")
-
 # SCREENCASTS
 
 Hosted at [http://designbytyping.com](http://designbytyping.com)
 
-Built using [nkd](http://nkd.cc) and [tachyons](http://github.com/mrmrs/tachyons)
+Built using [nkd](http://mrmrs.io/nkd) and [tachyons](http://github.com/tachyons-css/tachyons)
 
 # Author
-[MRMRS](http://mrmrs.cc "Adam Morse - Designer Developer")
+[MRMRS](http://mrmrs.cc "Adam Morse - Designer")
 
 # License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 @mrmrs
+Copyright (c) 2016 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

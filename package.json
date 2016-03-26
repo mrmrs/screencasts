@@ -1,16 +1,16 @@
 {
-  "name": "nkd",
-  "description": "Barebones scaffolding for developing a jekyll site.",
+  "name": "screencasts",
+  "description": "Screencasts by mrmrs",
   "version": "0.2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mrmrs/nkd.git"
+    "url": "git://github.com/mrmrs/screencasts.git"
   },
   "bugs": {
-    "url": "http://github.com/mrmrs/nkd/issues",
+    "url": "http://github.com/mrmrs/screencasts/issues",
     "email": "hi@mrmrs.cc"
   },
-  "homepage": "http://nkd.cc",
+  "homepage": "http://designbytyping.com",
   "keywords": [
     "jekyll",
     "ruby",
