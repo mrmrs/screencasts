@@ -64,11 +64,11 @@
         {{ content }}
         <footer class="bt b--near-white pt4 pb5 center mw7">
           <div class="phs phn-ns">
-            <h1 class="sans-serif ttu tracked f5">Other Screencasts</h1>
+            <h1 class="ttu tracked f5">Other Screencasts</h1>
             <ul class="list pl0 ml0">
               {% for post in site.related_posts limit: 5 %}
               <li class="pl0 pv3">
-                <a href="{{ post.url }}" class="db pv2 f4 f2-ns sans-serif link dim" title="{{post.title}}">
+                <a href="{{ post.url }}" class="db pv2 f4 link dim" title="{{post.title}}">
                   {{ post.title }}
                   <span>›</span>
                 </a>
