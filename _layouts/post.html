@@ -29,19 +29,19 @@
       .carbonads  { padding: 0; background: transparent; border: 1px solid transparent; margin: 0; }
     }
     </style>
-    <header class="bb pvm phs phn-l b--light-gray bg-near-white">
+    <header class="bb pv3 ph2 ph0-l b--light-gray bg-near-white">
 
-      <div class="cf center wi-100 mw8 box phs">
-        <div class="fn fl-ns wi-100 wi-60-ns mbm">
+      <div class="cf center w-100 mw8 box ph2">
+        <div class="fn fl-ns w-100 w-60-ns mbm">
           <div class="dt ad-height">
             <div class="dtc v-mid">
-              <a href="/" title="home" class="link black"><h1 class="ttu f3 mtn tc tl-ns">Design by typing </h1>
+              <a href="/" title="home" class="link black"><h1 class="ttu f3 mt0 tc tl-ns">Design by typing </h1>
               </a>
               <small class="dn db-ns fw1 f5 dark-gray i">Screencasts on design and front-end development</small>
             </div>
           </div>
       </div>
-      <div class="fn fr-ns wi-100 wi-40-ns carbonads">
+      <div class="fn fr-ns w-100 w-40-ns carbonads">
         <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=designbytypingcom" id="_carbonads_js"></script>
       </div>
 
@@ -50,7 +50,7 @@
 
     <main>
       <article>
-        <header class="pvl pvx-ns">
+        <header class="pv4 pv5-ns">
           <h1 class="tc f4 f2-ns">{{ page.title }}</h1>
           <h2 class="f5 tc">{{ page.subtitle }}</h2>
           <div class="tc center mw5">
@@ -59,16 +59,16 @@
           </div>
         </header>
         <div class="center mw8">
-          <iframe class="wi-100" style="height:24em;" src="//player.vimeo.com/video/{{ page.vimeoId }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe class="w-100" style="height:24em;" src="//player.vimeo.com/video/{{ page.vimeoId }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         {{ content }}
-        <footer class="bt b--near-white ptl pbx center mw7">
+        <footer class="bt b--near-white pt4 pb5 center mw7">
           <div class="phs phn-ns">
             <h1 class="sans-serif ttu tracked f5">Other Screencasts</h1>
-            <ul class="list pln mln">
+            <ul class="list pl0 ml0">
               {% for post in site.related_posts limit: 5 %}
-              <li class="pln pvm">
-                <a href="{{ post.url }}" class="db pvs f4 f2-ns sans-serif link " title="{{post.title}}">
+              <li class="pl0 pv3">
+                <a href="{{ post.url }}" class="db pv2 f4 f2-ns sans-serif link dim" title="{{post.title}}">
                   {{ post.title }}
                   <span>›</span>
                 </a>
@@ -80,9 +80,9 @@
       </article>
     </main>
 
-    <footer class="bt b--near-white ptl pbx">
+    <footer class="bt b--near-white pt4 pb5">
       <div class="center mw7">
-        <div class="phs phn-ns">
+        <div class="ph2 ph0-ns">
           {% include _footer_meta.html %}
         </div>
       </div>
