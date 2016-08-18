@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include _head.html %}
-  <body style="font-family: inconsolata, monaco, monospace;" >
+  <body style="font-family: consolas, monaco, 'andale mono', 'lucida console', monospace;" >
     <style type="text/css" media="screen">
     .carbonads { font-size: 13px;  margin-right: auto; margin-left: auto; padding: 1rem .5rem; background-color: #fff; border-radius: .25rem; border: 1px solid #eee; max-width: 18rem; }
     .carbonads .carbon-wrap { display: block; overflow: hidden; }
@@ -67,10 +67,9 @@
             <h1 class="ttu tracked f5">Other Screencasts</h1>
             <ul class="list pl0 ml0">
               {% for post in site.related_posts limit: 5 %}
-              <li class="pl0 pv3">
-                <a href="{{ post.url }}" class="db pv2 f4 link dim blue" title="{{post.title}}">
+              <li class="pl0">
+                <a href="{{ post.url }}" class="db ph3 pv2 f4 link dim blue" title="{{post.title}}">
                   {{ post.title }}
-                  <span>›</span>
                 </a>
               </li>
               {% endfor %}
