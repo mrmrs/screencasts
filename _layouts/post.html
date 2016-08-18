@@ -51,15 +51,16 @@
     <main>
       <article>
         <header class="pv4 pv5-ns">
-          <h1 class="tc f4 f2-ns">{{ page.title }}</h1>
-          <h2 class="f5 tc">{{ page.subtitle }}</h2>
+          <h1 class="tc f4 f2-ns mt2">{{ page.title }}</h1>
+          <h2 class="f6 tc gray">{{ page.subtitle }}</h2>
           <div class="tc center mw5">
             <a href="https://twitter.com/share" class="twitter-share-button" data-via="mrmrs_" data-size="large">Tweet</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
           </div>
         </header>
         <div class="center mw8">
-          <iframe class="w-100" style="height:24em;" src="//player.vimeo.com/video/{{ page.vimeoId }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="aspect-ratio aspect-ratio--16x9">
+          <iframe class="aspect-ratio--object" src="//player.vimeo.com/video/{{ page.vimeoId }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         {{ content }}
         <footer class="bt b--near-white pt4 pb5 center mw7">
