@@ -69,7 +69,7 @@
             <ul class="list pl0 ml0">
               {% for post in site.related_posts limit: 5 %}
               <li class="pl0 pv3">
-                <a href="{{ post.url }}" class="db pv2 f4 link dim" title="{{post.title}}">
+                <a href="{{ post.url }}" class="db pv2 f4 link dim blue" title="{{post.title}}">
                   {{ post.title }}
                   <span>›</span>
                 </a>
@@ -81,7 +81,7 @@
       </article>
     </main>
 
-    <footer class="bt b--near-white pt4 pb5">
+    <footer class="bt b--near-white pt5 pb5">
       <div class="center mw7">
         <div class="ph2 ph0-ns">
           {% include _footer_meta.html %}
